@@ -1,0 +1,15 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+install.packages("usethis")
+install.packages("here")
+
+usethis::use_git_config(user.name = "Horan517", user.email = "haoranx517@gmail.com")
+usethis::use_git()
+usethis::use_github()
+usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
+usethis::use_readme_rmd()
+```
