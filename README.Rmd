@@ -1,0 +1,96 @@
+---
+title: "Xu-Activity-4"
+author: "Haoran Xu"
+date: "2024-10-3"
+output:
+    html_document:
+      df_print: paged
+---
+
+# my-GEO712-repository
+
+This repository is created for the GEO712 course assignment. It includes all the necessary files and scripts needed to complete the project activities.
+
+## Project Structure
+
+- `init.R`: Script to initialize and install required packages
+- `README.Rmd`: ReadMe file for project documentation
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+
+```{r}
+library(here)
+# install.packages("ggplot2")  # use vignette use check all items udner gg nplot2
+# vignette(package = "ggplot2")
+# vignette("ggplot2-specs")
+
+# getting the pathway for working directory
+getwd()
+# setwd(...) 
+# recommend always using the Linux/Mac style with forward slashes (/), as Windows use two backslashes (\\).
+
+# 动态生成图片路径并保存为一个变量
+image_path <- paste0(here(), "/images/renv.png")
+```
+/Users/horanxu/Library/CloudStorage/OneDrive-Personal/GEOG 712 - Reproducible Research Workflow with GitHub and R/Assignments/Activity 2/Haoran's first repository/images/renv.png
+
+![renv workflow](%60r%20imag_path%60)
+
+```{r}
+renv::status()
+renv::snapshot()
+renv::snapshot()
+renv::status()
+```
+
+# Main Research Interest
+
+My main research interest lies in travel behavior studies which use modelling methods to understand how the outside environment, individual preferences, and societal norms may shape people's travel decisions. I want to use many different methods to discover the statistical and spatial-temporal patterns behind travel behavior. I inten to employ approaches like Bayesian logistic models or Structural Equation Modeling (SEM) to tangel the intersecting relationships between various varibales. I am also considering GeoAI technologies, such as machine learning method, as an approach to investigate into geospatial data.
+
+# Favorites
+
+## Favorite Music
+
+> ps: round brackets mean album name and release year, respectively.
+
+-   "浮躁" by 王菲 (*浮躁*, 1996)
+-   "うしろ姿" by Fishmans (*宇宙 日本 世田谷*, 1998)
+-   "The Predatory Wasp of the Palisades Is Out to Get Us!" by Sufjan Stevens (*Illinois*, 2004)
+-   "Malamente (Cap.1: Augurio)" by Rosalía (*El mal querer*, 2018)
+-   "Belinda Says" by Alvvays (*Blue Rev*, 2023)
+
+## Favorite Equation
+
+Global Moran's I:
+
+$$
+I = \frac{N}{W}*\frac{\sum^N_{i=1}*\sum^N_{j=1}w_{ij}(x_i-\bar{x})(x_j-\bar{x})}{\sum^N_{i=1}(x_i-\bar{x})^2}
+$$\
+where $N$ is the number of spatial units indexedusethis::use_github() by $i$ and $j$; $x$ is the variable of interest; $\bar{x}$ is the mean of $x$; $w_{ij}$ are the elements of a matrix of spatial weights with zeroes on the diagonal (i.e. $w_{ii}=0$); and $W$ is the sum of all $w_{ij}$ (i.e. $W=\sum^N_{i=1}{\sum^N_{j=1}{w_{ij}}}$) [1].
+
+## Favorite Artists
+
+| Name                | Achievements                                                                                                                                                                                                    |
+|---------------------|---------------------------------------------------|
+| Joni Mitchell       | Wrote and produced many records as a singer-songwriter who showcased the strengths of feminism and anti-war spirit in the 1960s and 70s.                                                                        |
+| My Bloody Valentine | The British duo group created the later-defined music genre by generations of indie music lovers as "shoegazing" and their best album *loveless* is a forever legacy to the human civilization.                 |
+| Arcade Fire         | Proved that indie rock can still attain commercial success through their first several acts and ultimately winning Grammy "Album of the Year" Award with their thrid full-length album *The Suburbs*.           |
+| Frank Ocean         | Regarded as a music genius and released two highly-acclaimed records which became the greatest albums of the 2010s.                                                                                             |
+| Cindy Lee           | As an Canadian-born drag queen artist, her latest psychedelic folk/rock record *DIAMOND JUBILEE* which was released in March 29 this year probably would probably become one the best indie records in history. |
+
+# A Chunk of Code
+
+```{r}
+print(sum(pi^2) + (360/365))
+m <- matrix(runif(1000), ncol = 10, nrow = 100)
+print(m[1,])
+```
+
+[1] Wikipedia contributors. (2024, August 24). Moran's I. In *Wikipedia, The Free Encyclopedia*. Retrieved 20:20, September 19, 2024, from <https://en.wikipedia.org/w/index.php?title=Moran%27s_I&oldid=1242089215>
