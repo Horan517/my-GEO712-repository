@@ -1,0 +1,44 @@
+---
+title: "Activity 5"
+author: "Haoran Xu"
+date: "2024-10-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Project Data Analysis
+
+## List the data that you expect to use, collect or create in your project. Identify if you are generating or collecting the data and if you are using existing datasets?
+
+I expect to use Future Mobility in Canada Survey (FMCS), a nationwide Canadian survey designed to capture the complex decisionmaking processes of travel behavior changes and the adoption of new mobility tools by assessing individual preferences, affective motivations, and behavioral intentions. I am using exiting datasets.
+
+## Are there legal or ethicial restrictions that you will need to address?
+
+Since the datasets collected individuals' socio-demographics and contained questions regarding personal preferences, along with the requirements by the fudning agency, I believe the datasets should be kept privately only to research purposes. Not only should not any data be disposed or leaked to potential profit-takers, yet the data should be preserved and kept safely and in manageable formats that could be used for other people. I think if requested appropriately and aggreed by the funding agencies, this dataset could be shared.
+
+## Go through the Quick Hits for Data Management and identify possible strategies to build and protect the value of your data.
+
+### Where will you keep raw data and how will you back it up?
+
+Since the datasets should only be stored and worked on through the lab computers, I will first store a copy of raw data on the lab computers, and I would back it up onto a personal drive or usb that would only be used within the lab computers.
+
+### What file formats do you anticipate your data will be in? Are the formats open or can they be converted to open formats?
+
+I anticipate my data to be stored in excel sheets and word documents. Since the formats are not open, I would convert them into comma separated files (such as .csv or .tsv) or plain text (.txt) or PDF/A (/pdf) if these data or research results are to be published to public.
+
+### Create a File naming convention for your project data
+
+I would use "FMCS_YYYYMMDD_Name_v01" to name the data I revised, for example, "FMCS_20241010_Haoran_v01" would be the first version for the dataset.
+
+### What standards are relevant to your project? List any existing standards or best practices in use in your field or in your lab? This could include instrument procedures or file management standards. What standards might you want to create to help you manage your data?
+
+I currently do not know if there are any standards used in the fields of transportation, I am thinking that the guideline for reading and interpreting the datasets could be written in a standardized format.
+
+### List possible strategies you might use to document your data throughout your project.
+
+I would use Read.Me files to explain and keep track all the documentation as a core guideline file. Plus, for specific aspects, such as survey introduction or literature review, I believe other types of read.me files could be written to better improve interpretibility and reproductivity.
+
+
